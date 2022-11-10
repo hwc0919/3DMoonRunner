@@ -23,7 +23,7 @@ public class AnimationManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         instance = this;
-        animationHandler = PlayRun;
+        // animationHandler = PlayRun;  // hwc: no animation when app start
         animation = GetComponent<Animation>();
 	}
  

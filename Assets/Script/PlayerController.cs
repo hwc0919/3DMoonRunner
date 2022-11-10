@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour {
         animation = GetComponent<Animation>();
         characterController = GetComponent<CharacterController>();
         standPosition = Position.Middle;
-        StartCoroutine(UpdateAction());
+        // StartCoroutine(UpdateAction());  // Should start after calling Play()
 	}
 
     public void Play()

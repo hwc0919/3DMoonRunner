@@ -12,12 +12,14 @@ public class GameController : MonoBehaviour {
 	void Start () {
         instance = this;
         isPause = true;
-        isPlay = true;
+        // isPlay = true;   // Should start game after calling play
+        isPlay = false;
 	}
 
     public void Play()
     {
-        isPause = false;
+        // isPause = false;
+        PlayerController.instance.Play();   // Always call PlayerController to start game
     }
 
     public void Pause()
